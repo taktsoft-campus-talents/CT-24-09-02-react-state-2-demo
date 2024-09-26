@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import { ColorBox2 } from "./components/ColorBox2";
 import { ColorBox1 } from "./components/ColorBox1";
+import { ColorBox2 } from "./components/ColorBox2";
+import { DisplayBoxDemo } from "./components/DisplayBoxDemo";
 import { MyComponentWithChildren } from "./components/MyComponentWithChildren";
 
 function App() {
@@ -195,6 +196,7 @@ function App() {
         <h1>Child from Parent</h1>
         <div>Counter: {counter}</div>
       </MyComponentWithChildren>
+      <DisplayBoxDemo />
     </div>
   );
 }
