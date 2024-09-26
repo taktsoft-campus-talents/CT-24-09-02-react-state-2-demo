@@ -152,9 +152,8 @@ function App() {
     return (
       <ColorBox2
         key={index}
-        index={index}
         color={color}
-        onBoxClick={handleColorBox2Click}
+        onBoxClick={() => handleColorBox2Click(index)}
       />
     );
   });

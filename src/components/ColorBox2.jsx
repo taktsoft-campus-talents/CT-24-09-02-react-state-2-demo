@@ -4,7 +4,7 @@ import "./ColorBox2.css";
  * This is a functional component that represents a colored box.
  * It's called a pure component because it doesn't have any state.
  */
-export function ColorBox2({ color, index, onBoxClick }) {
+export function ColorBox2({ color, onBoxClick }) {
   return (
     <div
       className="color-box"
@@ -16,7 +16,7 @@ export function ColorBox2({ color, index, onBoxClick }) {
        * It calls the `onBoxClick` function that was passed as a prop.
        * This is called "state uplifting".
        */
-      onClick={() => onBoxClick(index)}
+      onClick={onBoxClick}
     ></div>
   );
 }
