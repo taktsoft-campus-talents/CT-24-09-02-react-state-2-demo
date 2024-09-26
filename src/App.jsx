@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { ColorBox2 } from "./components/ColorBox2";
 import { ColorBox1 } from "./components/ColorBox1";
+import { MyComponentWithChildren } from "./components/MyComponentWithChildren";
 
 function App() {
   console.log("render App");
@@ -190,6 +191,11 @@ function App() {
       {displayCountOfColors}
       <input type="text" onChange={handleInputOnChange} />
       <button onClick={handleButtonClick}>add box</button>
+      <hr />
+      <MyComponentWithChildren text="text as prop value">
+        <h1>Child from Parent</h1>
+        <div>Counter: {counter}</div>
+      </MyComponentWithChildren>
     </div>
   );
 }
